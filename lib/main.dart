@@ -52,7 +52,13 @@ class MyHomePage extends HookWidget {
                           );
                         });
 
-                    date.value = val;
+                    date.value = DateTime(
+                      val.year,
+                      val.month,
+                      val.day,
+                      date.value.hour,
+                      date.value.minute,
+                    );
                   },
                   child: Text(Jiffy(date.value).yMMMd),
                 ),
