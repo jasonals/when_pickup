@@ -74,7 +74,7 @@ class MyHomePage extends HookWidget {
                       val.minute,
                     );
                   },
-                  child: Text(Jiffy(date.value).Hm),
+                  child: Text(Jiffy(date.value).format('h:mm a')),
                 ),
               ],
             ),
